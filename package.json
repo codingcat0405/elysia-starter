@@ -1,0 +1,25 @@
+{
+  "name": "elysia-template",
+  "version": "1.0.50",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "dev:prod": "export NODE_ENV=production && bun run --watch src/index.ts",
+    "start": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.0.2",
+    "@elysiajs/jwt": "^1.0.2",
+    "@elysiajs/swagger": "^1.0.5",
+    "bcrypt": "^5.1.1",
+    "elysia": "latest",
+    "pg": "^8.11.5",
+    "reflect-metadata": "^0.2.2",
+    "typeorm": "^0.3.20"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/node": "^16.11.10",
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}
