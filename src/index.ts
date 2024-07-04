@@ -16,7 +16,7 @@ const jwtConfig: any = {
   secret: process.env.JWT_SECRET,
   exp: '1y',
 }
-const app = new Elysia()
+export const app = new Elysia()
   .use(cors())
   .use(swagger(
     {
@@ -59,4 +59,3 @@ const app = new Elysia()
 console.log(`🦊 Elysia is running at http://${app.server?.hostname}:${app.server?.port}`);
 console.log(`🚀 Swagger UI is running at http://${app.server?.hostname}:${app.server?.port}/swagger-ui`)
 
-export default app //export app for testing

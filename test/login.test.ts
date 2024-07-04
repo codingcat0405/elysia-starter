@@ -1,5 +1,5 @@
 import {beforeAll, describe, expect, it} from 'bun:test'
-import app from "../src";
+import {app} from "../src";
 import {AppDataSource} from "../src/data-source";
 
 

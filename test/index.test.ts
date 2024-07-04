@@ -1,5 +1,5 @@
 import {describe, expect, it} from 'bun:test'
-import app from "../src";
+import {app} from "../src";
 
 describe('Health check', () => {
   it('should return Health check: Server\'s started!', async () => {
