@@ -16,7 +16,7 @@ const jwtConfig: any = {
   secret: process.env.JWT_SECRET,
   exp: '1y',
 }
-export const app = new Elysia()
+const app = new Elysia()
   .use(cors())
   .use(swagger(
     {
